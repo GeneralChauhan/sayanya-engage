@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Registraion Form</title>
+  </head>
+  <body>
+    <script type="module">
+      
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+   
+      
+      const firebaseConfig = {
+        apiKey: "AIzaSyBLhSNwa0_UMCVwFkJgIWpcOImRxXuNOXw",
+        authDomain: "datacollection-6a695.firebaseapp.com",
+        projectId: "datacollection-6a695",
+        storageBucket: "datacollection-6a695.appspot.com",
+        messagingSenderId: "503982354727",
+        appId: "1:503982354727:web:2b713557c19475d793b902",
+        measurementId: "G-90NXS66S0Y"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+    </script>
+    <div class="progressbar">
+      <div class="progress" id="progress"></div>
+
+      <div
+        class="progress-step progress-step-active"
+        data-title="ACADEMIC DETAILS"
+      ></div>
+      <div class="progress-step" data-title="PROFILE CREATION"></div>
+      <div class="progress-step" data-title="CAPTURE"></div>
+    </div>
+    <form action="#" class="form">
+      <!-- Progress bar -->
+
+      <!-- Steps -->
+      <!-- form 1 -->
+      <div class="form-step form-step-active">
+        <h1 class="text-center">ACADEMIC DETAILS</h1>
+        <div class="input-group">
+          <input type="text" name="username" id="username" placeholder="Name" />
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            number="position"
+            id="position"
+            placeholder="Registration Number"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            number="rollnumber"
+            id="rollnumber"
+            placeholder="Roll Number"
+          />
+        </div>
+
+        <div class="input-group">
+          <select class="input-group">
+            <option value="">Branch</option>
+            <option value="1">Computer Engineering</option>
+            <option value="2">Information Technology</option>
+            <option value="3">Electronics and Telecommunication</option>
+            <option value="4">Mechanical</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <select class="input-group">
+            <option>Year</option>
+            <option>First</option>
+            <option>Second</option>
+            <option>Third</option>
+            <option>Fourth</option>
+          </select>
+        </div>
+
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+
+      <!-- form 2 -->
+      <div class="form-step">
+        <h1 class="text-center">PROFILE CREATION</h1>
+        <div class="input-group">
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Contact Number"
+          />
+        </div>
+        <div class="input-group">
+          <input type="text" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="ConfirmPassword"
+          />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <!-- form 3 -->
+      <div class="form-step">
+        <div class="input-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+        <div class="input-group">
+          <label for="ID">National ID</label>
+          <input type="number" name="ID" id="ID" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
