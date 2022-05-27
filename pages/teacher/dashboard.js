@@ -1,0 +1,1 @@
+const headingName = document.getElementById('name-teacher');

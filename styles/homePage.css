@@ -53,7 +53,7 @@ display: flex;
     
 }
 .cardHeading{
-    /* margin-bottom: 100px;     */
+    margin-top: -20px;    
 }
 
 .cardImg{
@@ -62,6 +62,7 @@ display: flex;
     border-radius: 17px;
     flex-grow: 2;
     object-fit: cover;
+    margin-bottom: -20px;
 }
 
 .card:hover{
@@ -69,3 +70,47 @@ display: flex;
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
 }
+
+/* dashboard */
+
+.headingSection{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.avatar{
+    object-fit:cover ;
+    height: 100%;
+    width: 100%;
+
+}
+
+#studentsTable {
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-collapse: collapse; */
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  #studentsTable td, #studentsTable th {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+  }
+  
+  #studentsTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #studentsTable tr:hover {background-color: rgb(148, 40, 40);}
+  
+  #studentsTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #c5ffea;
+    color: rgb(91, 55, 248);
+    /* border-radius: 12px; */
+  }
+  
